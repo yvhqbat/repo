@@ -7,6 +7,11 @@
 - https://github.com/go-sql-driver/mysql
 - https://github.com/go-gorm/gorm
 
+环境搭建：
+```shell
+docker run -dit --rm --name mysql -e "MYSQL_ROOT_PASSWORD=123456" -v /data/mysql/mysql-5.7.36:/var/lib/mysql -p 3306:3306 mysql:5.7.36
+```
+
 ## kafka
 - https://github.com/Shopify/sarama
 
