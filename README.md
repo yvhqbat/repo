@@ -40,3 +40,8 @@ func DefaultRetryDelayFunc(n int, e error, t *Task) time.Duration {
 
 ## gateway
 - https://github.com/openresty/openresty
+
+## hashids
+- https://github.com/speps/go-hashids
+
+
