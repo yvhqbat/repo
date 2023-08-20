@@ -21,7 +21,7 @@ var retryCmd = &cobra.Command{
 	Long:  `It uses exponential back-off strategy to calculate the retry delay.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		t := DefaultRetryDelayFunc(retryTimes)
-		fmt.Printf("default retry delay - n: [%d], delay: [%v]\n", retryTimes, t.Seconds())
+		fmt.Printf("retry times: [%d], delay: [%v] secondes \n", retryTimes, t.Seconds())
 	},
 }
 
