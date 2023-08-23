@@ -52,3 +52,4 @@ func DefaultRetryDelayFunc(n int, e error, t *Task) time.Duration {
 
 ## Design Patterns
 - https://learn.microsoft.com/en-us/previous-versions/msp-n-p/dn600223(v=pandp.10)
+- https://learn.microsoft.com/zh-cn/azure/architecture/patterns/
