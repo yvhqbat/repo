@@ -47,4 +47,8 @@ func DefaultRetryDelayFunc(n int, e error, t *Task) time.Duration {
 ## CMD
 - https://github.com/spf13/cobra
 
+## Circuit Breaker
+- https://github.com/sony/gobreaker
 
+## Design Patterns
+- https://learn.microsoft.com/en-us/previous-versions/msp-n-p/dn600223(v=pandp.10)
