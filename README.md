@@ -3,6 +3,11 @@
 ## redis
 - https://github.com/redis/go-redis
 
+环境搭建：
+```shell
+docker run -dit --rm --name redis -p 127.0.0.1:6379:6379 -v redis:/data redis:latest
+```
+
 ## mysql
 - https://github.com/go-sql-driver/mysql
 - https://github.com/go-gorm/gorm
@@ -10,6 +15,8 @@
 环境搭建：
 ```shell
 docker run -dit --rm --name mysql -e "MYSQL_ROOT_PASSWORD=123456" -v /data/mysql/mysql-5.7.36:/var/lib/mysql -p 3306:3306 mysql:5.7.36
+
+docker run -dit --rm --name mysql -p 127.0.0.1:3306:3306 -v mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456  mysql:latest
 ```
 
 ## kafka
